@@ -38,76 +38,79 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites01_64\MonsterA\Idle.bmp">
+    <Compile Include="Sprites01_64\MonsterA\Idle.png">
       <Name>Idle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\MonsterA\Run.bmp">
+    <Compile Include="Sprites01_64\MonsterA\Run.png">
       <Name>Run</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Idle.bmp">
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites01_64\MonsterB\Idle.png">
       <Name>Idle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Run.bmp">
+    <Compile Include="Sprites01_64\MonsterB\Run.png">
       <Name>Run</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\MonsterC\Run.bmp">
-      <Name>Run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Idle.bmp">
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites01_64\MonsterC\Idle.png">
       <Name>Idle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Run.bmp">
+    <Compile Include="Sprites01_64\MonsterC\Run.png">
       <Name>Run</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\Player\Celebrate.bmp">
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites01_64\MonsterD\Idle.png">
+      <Name>Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites01_64\MonsterD\Run.png">
+      <Name>Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites01_64\Player\Celebrate.png">
       <Name>Celebrate</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\Player\Die.bmp">
+    <Compile Include="Sprites01_64\Player\Die.png">
       <Name>Die</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\Player\Idle.bmp">
+    <Compile Include="Sprites01_64\Player\Idle.png">
       <Name>Idle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\Player\Jump.bmp">
+    <Compile Include="Sprites01_64\Player\Jump.png">
       <Name>Jump</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\Player\Run.bmp">
+    <Compile Include="Sprites01_64\Player\Run.png">
       <Name>Run</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Sprites01_64\MonsterC\Idle.bmp">
-      <Name>Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Sprites01_64\obj\x86\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
