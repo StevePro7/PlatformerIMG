@@ -14,7 +14,7 @@ namespace Backgrounds
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		private const int size = 32;
+		private const int size = 64;
 		private const int wide = size * 10;
 		private const int high = size * 1;
 		private Texture2D[] monsters;
@@ -42,7 +42,7 @@ namespace Backgrounds
 		/// </summary>
 		protected override void Initialize()
 		{
-			save = true;
+			save = false;
 			IsMouseVisible = true;
 			color = Color.Black;
 			base.Initialize();
@@ -55,21 +55,21 @@ namespace Backgrounds
 		protected override void LoadContent()
 		{
 			monsters = new Texture2D[8];
-			monsters[0] = Content.Load<Texture2D>("MonsterA/Idle_left");
-			monsters[1] = Content.Load<Texture2D>("MonsterA/Run_left");
-			monsters[2] = Content.Load<Texture2D>("MonsterB/Idle_left");
-			monsters[3] = Content.Load<Texture2D>("MonsterB/Run_left");
-			monsters[4] = Content.Load<Texture2D>("MonsterC/Idle_left");
-			monsters[5] = Content.Load<Texture2D>("MonsterC/Run_left");
-			monsters[6] = Content.Load<Texture2D>("MonsterD/Idle_left");
-			monsters[7] = Content.Load<Texture2D>("MonsterD/Run_left");
+			monsters[0] = Content.Load<Texture2D>("Sprites01_64/MonsterA/Idle");
+			monsters[1] = Content.Load<Texture2D>("Sprites01_64/MonsterA/Run");
+			monsters[2] = Content.Load<Texture2D>("Sprites01_64/MonsterB/Idle");
+			monsters[3] = Content.Load<Texture2D>("Sprites01_64/MonsterB/Run");
+			monsters[4] = Content.Load<Texture2D>("Sprites01_64/MonsterC/Idle");
+			monsters[5] = Content.Load<Texture2D>("Sprites01_64/MonsterC/Run");
+			monsters[6] = Content.Load<Texture2D>("Sprites01_64/MonsterD/Idle");
+			monsters[7] = Content.Load<Texture2D>("Sprites01_64/MonsterD/Run");
 
 			player = new Texture2D[5];
-			player[0] = Content.Load<Texture2D>("Player/Celebrate_left");
-			player[1] = Content.Load<Texture2D>("Player/Die_left");
-			player[2] = Content.Load<Texture2D>("Player/Jump_left");
-			player[3] = Content.Load<Texture2D>("Player/Run_left");
-			player[4] = Content.Load<Texture2D>("Player/Idle_left");
+			player[0] = Content.Load<Texture2D>("Sprites01_64/Player/Celebrate");
+			player[1] = Content.Load<Texture2D>("Sprites01_64/Player/Die");
+			player[2] = Content.Load<Texture2D>("Sprites01_64/Player/Jump");
+			player[3] = Content.Load<Texture2D>("Sprites01_64/Player/Run");
+			player[4] = Content.Load<Texture2D>("Sprites01_64/Player/Idle");
 
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
