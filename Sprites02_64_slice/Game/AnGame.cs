@@ -17,12 +17,11 @@ namespace Game
 		private const int size = 64;
 		private int wide;
 		private const int high = size * 1;
-		private Texture2D[] monsters;
-		private Texture2D[] players;
-		private string[] monstNames;
-		private string[] playerNames;
+		private Texture2D[] monsters, players, images;
+		private string[] monstNames, playerNames, names;
 		RenderTarget2D renderTarget;
 		private Color color;
+		private bool usePlayer;
 		private int left;
 		private bool save;
 
@@ -34,6 +33,7 @@ namespace Game
 				save = Convert.ToBoolean(ConfigurationManager.AppSettings["Save"]);
 			}
 
+			usePlayer = "Player" == ConfigurationManager.AppSettings["Type"];
 			left = Convert.ToInt32(ConfigurationManager.AppSettings["Left"]);
 			wide = size - (2 * left);
 
@@ -54,7 +54,6 @@ namespace Game
 		/// </summary>
 		protected override void Initialize()
 		{
-			
 			IsMouseVisible = true;
 			color = Color.Black;
 			base.Initialize();
@@ -73,16 +72,16 @@ namespace Game
 			for (int index = 0; index < 4; index++)
 			{
 				int count = index * 2 + 0;
-				String assetName0 = String.Format("{0}/{1}/{2}", root, (MonsterLett)index, (MonsterType)0);
+				String assetName0 = String.Format("{0}/{1}", (MonsterLett)index, (MonsterType)0);
 				//monstNames[count] = assetName0.Replace("/", "_");
 				monstNames[count] = assetName0;
-				monsters[count] = Content.Load<Texture2D>(assetName0);
+				monsters[count] = Content.Load<Texture2D>(root + "/" + assetName0);
 
 				count = index * 2 + 1;
-				String assetName1 = String.Format("{0}/{1}/{2}", root, (MonsterLett)index, (MonsterType)1);
+				String assetName1 = String.Format("{0}/{1}", (MonsterLett)index, (MonsterType)1);
 				//monstNames[count] = assetName1.Replace("/", "_");
 				monstNames[count] = assetName1;
-				monsters[count] = Content.Load<Texture2D>(assetName1);
+				monsters[count] = Content.Load<Texture2D>(root + "/" + assetName1);
 			}
 
 			players = new Texture2D[5];
@@ -93,6 +92,14 @@ namespace Game
 				//playerNames[index] = assetName.Replace("/", "_");
 				playerNames[index] = assetName;
 				players[index] = Content.Load<Texture2D>(root + "/" + assetName);
+			}
+
+			images = monsters;
+			names = monstNames;
+			if (usePlayer)
+			{
+				images = players;
+				names = playerNames;
 			}
 
 			// Create a new SpriteBatch, which can be used to draw textures.
@@ -138,9 +145,9 @@ namespace Game
 		{
 			if (save)
 			{
-				for (int loops = 0; loops < 5; loops++)
+				for (int loops = 0; loops < images.Length; loops++)
 				{
-					Texture2D tex = players[loops];
+					Texture2D tex = images[loops];
 					int width = tex.Width;
 					int count = width/size;
 
@@ -149,7 +156,8 @@ namespace Game
 						GraphicsDevice.SetRenderTarget(0, renderTarget);
 						GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, color, 1, 0);
 
-						DrawPlayer(loops, index);
+						//DrawPlayer(loops, index);
+						DrawImage(loops, index);
 						base.Draw(gameTime);
 
 						GraphicsDevice.SetRenderTarget(0, null);
@@ -161,7 +169,7 @@ namespace Game
 							suffix = (index + 1).ToString().PadLeft(2, '0');
 						}
 
-						String fileName = playerNames[loops] + suffix + ".png";
+						String fileName = names[loops] + suffix + ".png";
 						resolvedTexture.Save(fileName, ImageFileFormat.Png);
 					}
 				}
@@ -171,19 +179,22 @@ namespace Game
 			{
 				for (int loops = 0; loops < 1; loops++)
 				{
-					Texture2D tex = players[loops];
+					Texture2D tex = images[loops];
 					int width = tex.Width;
 					int count = width/size;
 
 					for (int index = 0; index < count; index++)
 					{
+						//DrawPlayer(loops, index);
+						DrawImage(loops, index);
+
 						String suffix = String.Empty;
 						if (count > 1)
 						{
 							suffix = (index + 1).ToString().PadLeft(2, '0');
 						}
-						DrawMonst(index);
-						String fileName = playerNames[index] + suffix + ".png";
+
+						String fileName = names[loops] + suffix + ".png";
 					}
 				}
 
@@ -191,22 +202,31 @@ namespace Game
 			}
 		}
 
-		private void DrawPlayer(int loops, int index)
+		private void DrawImage(int loops, int index)
 		{
 			GraphicsDevice.Clear(color);
 			spriteBatch.Begin();
 			Rectangle rect = new Rectangle(size * index + left, 0, wide, size);
-			spriteBatch.Draw(players[loops], Vector2.Zero, rect, Color.White);
+			spriteBatch.Draw(images[loops], Vector2.Zero, rect, Color.White);
 			spriteBatch.End();
 		}
-		private void DrawMonst(int index)
-		{
-			GraphicsDevice.Clear(color);
-			spriteBatch.Begin();
-			Rectangle rect = new Rectangle(size * index + left, 0, wide, size);
-			spriteBatch.Draw(monsters[index], Vector2.Zero, rect, Color.White);
-			spriteBatch.End();
-		}
+
+		//private void DrawPlayer(int loops, int index)
+		//{
+		//    GraphicsDevice.Clear(color);
+		//    spriteBatch.Begin();
+		//    Rectangle rect = new Rectangle(size * index + left, 0, wide, size);
+		//    spriteBatch.Draw(players[loops], Vector2.Zero, rect, Color.White);
+		//    spriteBatch.End();
+		//}
+		//private void DrawMonst(int index)
+		//{
+		//    GraphicsDevice.Clear(color);
+		//    spriteBatch.Begin();
+		//    Rectangle rect = new Rectangle(size * index + left, 0, wide, size);
+		//    spriteBatch.Draw(monsters[index], Vector2.Zero, rect, Color.White);
+		//    spriteBatch.End();
+		//}
 
 		private void DrawX()
 		{
