@@ -1,6 +1,15 @@
 # PlatformerIMG
 Images for Platformer game
 
+19/02/2019
+Powershell rename files
+Reference:
+E:\Steven\XNA\Platformer\SpriteBlackBG_04_sprites\Game\bin\x86\Debug
+
+Start | Run | Powershell
+cd E:\GitHub\StevePro7\PlatformerIMG\Sprites02_64_slice\Game\Content\Sprites01_64\MonsterA
+get-childitem *.png | foreach { rename-item $_ $_.Name.Replace("MonsterA_", "") }
+
 18/02/2019
 Get all the PNG files and make black background fill
 Open in paint.net and set all rest to transparent
