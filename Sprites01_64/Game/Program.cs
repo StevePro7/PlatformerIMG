@@ -1,6 +1,6 @@
 using System;
 
-namespace Backgrounds
+namespace Game
 {
 	static class Program
 	{

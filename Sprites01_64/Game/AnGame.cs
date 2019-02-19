@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace Backgrounds
+namespace Game
 {
 	/// <summary>
 	/// This is the main type for your game
@@ -18,7 +18,9 @@ namespace Backgrounds
 		private const int wide = size * 10;
 		private const int high = size * 1;
 		private Texture2D[] monsters;
-		private Texture2D[] player;
+		private Texture2D[] players;
+		private string[] monstNames;
+		private string[] playerNames;
 		RenderTarget2D renderTarget;
 		private Color color;
 		private bool save;
@@ -42,7 +44,7 @@ namespace Backgrounds
 		/// </summary>
 		protected override void Initialize()
 		{
-			save = false;
+			save = true;
 			IsMouseVisible = true;
 			color = Color.Black;
 			base.Initialize();
@@ -54,22 +56,31 @@ namespace Backgrounds
 		/// </summary>
 		protected override void LoadContent()
 		{
-			monsters = new Texture2D[8];
-			monsters[0] = Content.Load<Texture2D>("Sprites01_64/MonsterA/Idle");
-			monsters[1] = Content.Load<Texture2D>("Sprites01_64/MonsterA/Run");
-			monsters[2] = Content.Load<Texture2D>("Sprites01_64/MonsterB/Idle");
-			monsters[3] = Content.Load<Texture2D>("Sprites01_64/MonsterB/Run");
-			monsters[4] = Content.Load<Texture2D>("Sprites01_64/MonsterC/Idle");
-			monsters[5] = Content.Load<Texture2D>("Sprites01_64/MonsterC/Run");
-			monsters[6] = Content.Load<Texture2D>("Sprites01_64/MonsterD/Idle");
-			monsters[7] = Content.Load<Texture2D>("Sprites01_64/MonsterD/Run");
+			const String root = "Sprites01_64";
 
-			player = new Texture2D[5];
-			player[0] = Content.Load<Texture2D>("Sprites01_64/Player/Celebrate");
-			player[1] = Content.Load<Texture2D>("Sprites01_64/Player/Die");
-			player[2] = Content.Load<Texture2D>("Sprites01_64/Player/Jump");
-			player[3] = Content.Load<Texture2D>("Sprites01_64/Player/Run");
-			player[4] = Content.Load<Texture2D>("Sprites01_64/Player/Idle");
+			monsters = new Texture2D[8];
+			monstNames = new string[8];
+			for (int index = 0; index < 4; index++)
+			{
+				int count = index * 2 + 0;
+				String assetName0 = String.Format("{0}/{1}", (MonsterLett)index, (MonsterType)0);
+				monstNames[count] = assetName0.Replace("/", "_");
+				monsters[count] = Content.Load<Texture2D>(root + "/" + assetName0);
+
+				count = index * 2 + 1;
+				String assetName1 = String.Format("{0}/{1}", (MonsterLett)index, (MonsterType)1);
+				monstNames[count] = assetName1.Replace("/", "_");
+				monsters[count] = Content.Load<Texture2D>(root + "/" + assetName1);
+			}
+
+			players = new Texture2D[5];
+			playerNames = new string[5];
+			for (int index = 0; index < 5; index++)
+			{
+				String assetName = String.Format("Player/{0}", (PlayerType)index);
+				playerNames[index] = assetName.Replace("/", "_");
+				players[index] = Content.Load<Texture2D>(root + "/" + assetName);
+			}
 
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
@@ -114,26 +125,48 @@ namespace Backgrounds
 		{
 			if (save)
 			{
-				GraphicsDevice.SetRenderTarget(0, renderTarget);
-				GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, color, 1, 0);
+				for (int index = 0; index < 5; index++)
+				{
+					GraphicsDevice.SetRenderTarget(0, renderTarget);
+					GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, color, 1, 0);
 
-				Draw();
-				base.Draw(gameTime);
+					DrawPlayer(index);
+					base.Draw(gameTime);
 
-				GraphicsDevice.SetRenderTarget(0, null);
-				Texture2D resolvedTexture = renderTarget.GetTexture();
-				//resolvedTexture.Save("monsD_idle_org.bmp", ImageFileFormat.Bmp);
-				resolvedTexture.Save("monsD_run_org.bmp", ImageFileFormat.Bmp);
+					GraphicsDevice.SetRenderTarget(0, null);
+					Texture2D resolvedTexture = renderTarget.GetTexture();
+
+					//String fileName = monstNames[index] + ".png";
+					String fileName = playerNames[index] + ".png";
+					resolvedTexture.Save(fileName, ImageFileFormat.Png);
+				}
 				Exit();
 			}
 			else
 			{
-				Draw();
+				DrawMonst(0);
 				base.Draw(gameTime);
 			}
 		}
 
-		private void Draw()
+		private void DrawPlayer(int index)
+		{
+			GraphicsDevice.Clear(color);
+
+			spriteBatch.Begin();
+			spriteBatch.Draw(players[index], Vector2.Zero, Color.White);
+			spriteBatch.End();
+		}
+		private void DrawMonst(int index)
+		{
+			GraphicsDevice.Clear(color);
+
+			spriteBatch.Begin();
+			spriteBatch.Draw(monsters[index], Vector2.Zero, Color.White);
+			spriteBatch.End();
+		}
+
+		private void DrawX()
 		{
 			GraphicsDevice.Clear(color);
 
