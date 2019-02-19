@@ -4,26 +4,27 @@ using System.Text;
 
 namespace Game
 {
-	public enum PlayerType
+	public enum ActionType
 	{
-		Idle = 0,
-		Run = 1,
-		Celebrate = 2,
-		Die = 3,
-		Jump = 4,
+		Idle,
+		Run,
+		Celebrate,
+		Die,
+		Jump,
 	}
 
-	public enum MonsterLett
+	public enum EntityType
 	{
-		MonsterA = 0,
-		MonsterB = 1,
-		MonsterC = 2,
-		MonsterD = 3,
+		MonsterA,
+		MonsterB,
+		MonsterC,
+		MonsterD,
+		Player,
 	}
 
-	public enum MonsterType
+	public enum Direction
 	{
-		Idle = 0,
-		Run = 1,
+		Left,
+		Rght,
 	}
 }
