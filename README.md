@@ -1,6 +1,11 @@
 # PlatformerIMG
 Images for Platformer game
 
+21/02/2019
+Invalid Operation Exception
+If receive this when save image then ensure that the output directory exists!
+Otherwise code won't "know" where to save and crash...!!
+
 19/02/2019
 Powershell rename files
 Reference:

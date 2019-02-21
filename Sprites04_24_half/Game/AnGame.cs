@@ -130,47 +130,53 @@ namespace Game
 				GraphicsDevice.SetRenderTarget(0, renderTarget);
 				GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, color, 1, 0);
 
-				DrawImage();
+				// Left
+				DrawImage((int)Direction.Left);
 				base.Draw(gameTime);
 
 				GraphicsDevice.SetRenderTarget(0, null);
 				Texture2D resolvedTexture1 = renderTarget.GetTexture();
 
-				string suffix = String.Empty;
+				string suffix1 = String.Empty;
 				if (ActionType.Idle != actionType)
 				{
-					suffix = "_" + Direction.Left.ToString();
+					suffix1 = "_" + Direction.Left.ToString();
 				}
-				String fileName1 = String.Format("{0}/{1}{2}.png", entityType, actionType, suffix);
+				String fileName1 = String.Format("{0}/{1}{2}.png", entityType, actionType, suffix1);
 				resolvedTexture1.Save(fileName1, ImageFileFormat.Png);
 
-				//// Right
-				//GraphicsDevice.SetRenderTarget(0, renderTarget);
-				//GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, color, 1, 0);
+				// Right
+				GraphicsDevice.SetRenderTarget(0, renderTarget);
+				GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, color, 1, 0);
 
-				//DrawImage();
-				//base.Draw(gameTime);
+				DrawImage((int)Direction.Rght);
+				base.Draw(gameTime);
 
-				//GraphicsDevice.SetRenderTarget(0, null);
-				//Texture2D resolvedTexture2 = renderTarget.GetTexture();
+				GraphicsDevice.SetRenderTarget(0, null);
+				Texture2D resolvedTexture2 = renderTarget.GetTexture();
 
-				//String fileName2 = String.Format("{0}/{1}_{2}.png", entityType, actionType, Direction.Rght);
-				//resolvedTexture2.Save(fileName2, ImageFileFormat.Png);
+				string suffix2 = String.Empty;
+				if (ActionType.Idle != actionType)
+				{
+					suffix2 = "_" + Direction.Rght.ToString();
+				}
+				String fileName2 = String.Format("{0}/{1}{2}.png", entityType, actionType, suffix2);
+				resolvedTexture2.Save(fileName2, ImageFileFormat.Png);
 
 				Exit();
 			}
 			else
 			{
-				DrawImage();
+				DrawImage(0);
 				base.Draw(gameTime);
 			}
 		}
 
-		private void DrawImage()
+		private void DrawImage(int index)
 		{
 			GraphicsDevice.Clear(color);
 			spriteBatch.Begin();
-			spriteBatch.Draw(images[0], Vector2.Zero, null, Color.White, 0.0f, Vector2.Zero, 0.5f, SpriteEffects.None, 1.0f);
+			spriteBatch.Draw(images[index], Vector2.Zero, null, Color.White, 0.0f, Vector2.Zero, 0.5f, SpriteEffects.None, 1.0f);
 			spriteBatch.End();
 		}
 
