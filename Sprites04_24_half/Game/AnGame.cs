@@ -15,15 +15,14 @@ namespace Game
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		private const int time = 10;
-		private const int wide = 48;
-		private const int high = 64;
+		//private const int time = 1;
+		private const int wide = 24;
+		private const int high = 32;
 		private Texture2D[] images;
 		RenderTarget2D renderTarget;
 		private Color color;
 		private ActionType actionType;
 		private EntityType entityType;
-		//private Direction direction;
 		private bool save;
 
 		public AnGame()
@@ -36,11 +35,15 @@ namespace Game
 
 			entityType = (EntityType) Enum.Parse(typeof (EntityType), ConfigurationManager.AppSettings["Entity"], true);
 			actionType = (ActionType) Enum.Parse(typeof (ActionType), ConfigurationManager.AppSettings["Action"], true);
-			//direction = (Direction)Enum.Parse(typeof(Direction), ConfigurationManager.AppSettings["Direction"], true);
 
+			int number = 1;
+			if (ActionType.Idle != actionType)
+			{
+				number = 10;
+			}
 			graphics = new GraphicsDeviceManager(this)
 			{
-				PreferredBackBufferWidth = time * wide,
+				PreferredBackBufferWidth = number * wide,
 				PreferredBackBufferHeight = high,
 				IsFullScreen = false
 			};
@@ -68,10 +71,15 @@ namespace Game
 		{
 			const String root = "Sprites01_64";
 
-			images = new Texture2D[10];
-			for (int index = 0; index < 10; index++)
+			images = new Texture2D[2];
+			for (int index = 0; index < 2; index++)
 			{
-				string suffix = (index + 1).ToString().PadLeft(2, '0');
+				string suffix = String.Empty;
+				if (ActionType.Idle != actionType)
+				{
+					Direction temp = (Direction) index;
+					suffix = "_" + temp.ToString();
+				}
 				String assetName = String.Format("{0}/{1}/{2}{3}", root, entityType, actionType, suffix);
 				images[index] = Content.Load<Texture2D>(assetName);
 			}
@@ -122,66 +130,49 @@ namespace Game
 				GraphicsDevice.SetRenderTarget(0, renderTarget);
 				GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, color, 1, 0);
 
-				DrawImage(SpriteEffects.None);
+				DrawImage();
 				base.Draw(gameTime);
 
 				GraphicsDevice.SetRenderTarget(0, null);
 				Texture2D resolvedTexture1 = renderTarget.GetTexture();
 
-				String fileName1 = String.Format("{0}/{1}_{2}.png", entityType, actionType, Direction.Left);
+				string suffix = String.Empty;
+				if (ActionType.Idle != actionType)
+				{
+					suffix = "_" + Direction.Left.ToString();
+				}
+				String fileName1 = String.Format("{0}/{1}{2}.png", entityType, actionType, suffix);
 				resolvedTexture1.Save(fileName1, ImageFileFormat.Png);
 
-				// Right
-				GraphicsDevice.SetRenderTarget(0, renderTarget);
-				GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, color, 1, 0);
+				//// Right
+				//GraphicsDevice.SetRenderTarget(0, renderTarget);
+				//GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, color, 1, 0);
 
-				DrawImage(SpriteEffects.FlipHorizontally);
-				base.Draw(gameTime);
+				//DrawImage();
+				//base.Draw(gameTime);
 
-				GraphicsDevice.SetRenderTarget(0, null);
-				Texture2D resolvedTexture2 = renderTarget.GetTexture();
+				//GraphicsDevice.SetRenderTarget(0, null);
+				//Texture2D resolvedTexture2 = renderTarget.GetTexture();
 
-				String fileName2 = String.Format("{0}/{1}_{2}.png", entityType, actionType, Direction.Rght);
-				resolvedTexture2.Save(fileName2, ImageFileFormat.Png);
+				//String fileName2 = String.Format("{0}/{1}_{2}.png", entityType, actionType, Direction.Rght);
+				//resolvedTexture2.Save(fileName2, ImageFileFormat.Png);
 
 				Exit();
 			}
 			else
 			{
-				DrawImage(SpriteEffects.None);
+				DrawImage();
 				base.Draw(gameTime);
 			}
 		}
 
-		private void DrawImage(SpriteEffects effects)
+		private void DrawImage()
 		{
 			GraphicsDevice.Clear(color);
 			spriteBatch.Begin();
-			for (int index = 0; index < 10; index++)
-			{
-				spriteBatch.Draw(images[index], new Vector2(index*wide, 0), null, Color.White, 0.0f, Vector2.Zero, 1.0f, effects, 1.0f);
-			}
+			spriteBatch.Draw(images[0], Vector2.Zero, null, Color.White, 0.0f, Vector2.Zero, 0.5f, SpriteEffects.None, 1.0f);
 			spriteBatch.End();
 		}
-
-		//private void DrawPlayer(int loops, int index)
-		//{
-		//    GraphicsDevice.Clear(color);
-		//    spriteBatch.Begin();
-		//    Rectangle rect = new Rectangle(size * index + left, 0, wide, size);
-		//    spriteBatch.Draw(players[loops], Vector2.Zero, rect, Color.White);
-		//    spriteBatch.End();
-		//}
-		//private void DrawMonst(int index)
-		//{
-		//    GraphicsDevice.Clear(color);
-		//    spriteBatch.Begin();
-		//    Rectangle rect = new Rectangle(size * index + left, 0, wide, size);
-		//    spriteBatch.Draw(monsters[index], Vector2.Zero, rect, Color.White);
-		//    spriteBatch.End();
-		//}
-
-		
 
 	}
 }

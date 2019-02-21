@@ -38,28 +38,61 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sprites01_64\Player\Celebrate_Left.png">
+      <Name>Celebrate_Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites01_64\Player\Celebrate_Rght.png">
+      <Name>Celebrate_Rght</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites01_64\Player\Die_Left.png">
+      <Name>Die_Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites01_64\Player\Die_Rght.png">
+      <Name>Die_Rght</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites01_64\Player\Jump_Left.png">
+      <Name>Jump_Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites01_64\Player\Jump_Rght.png">
+      <Name>Jump_Rght</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites01_64\Player\Run_Left.png">
+      <Name>Run_Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites01_64\Player\Run_Rght.png">
+      <Name>Run_Rght</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites01_64\MonsterD\Run_Left.png">
+      <Name>Run_Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Sprites01_64\MonsterD\Run_Rght.png">
+      <Name>Run_Rght</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Sprites01_64\Player\Idle.png">
-      <Name>Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Sprites01_64\MonsterA\Idle.png">
-      <Name>Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Sprites01_64\MonsterB\Idle.png">
-      <Name>Idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Sprites01_64\MonsterC\Idle.png">
       <Name>Idle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -73,413 +106,58 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites01_64\MonsterA\Run01.png">
-      <Name>Run01</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterA\Run02.png">
-      <Name>Run02</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterA\Run03.png">
-      <Name>Run03</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterA\Run04.png">
-      <Name>Run04</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterA\Run05.png">
-      <Name>Run05</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterA\Run06.png">
-      <Name>Run06</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterA\Run07.png">
-      <Name>Run07</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterA\Run08.png">
-      <Name>Run08</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterA\Run09.png">
-      <Name>Run09</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterA\Run10.png">
-      <Name>Run10</Name>
+    <Compile Include="Sprites01_64\MonsterC\Idle.png">
+      <Name>Idle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites01_64\MonsterB\Run01.png">
-      <Name>Run01</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Run02.png">
-      <Name>Run02</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Run03.png">
-      <Name>Run03</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Run04.png">
-      <Name>Run04</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Run05.png">
-      <Name>Run05</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Run06.png">
-      <Name>Run06</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Run07.png">
-      <Name>Run07</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Run08.png">
-      <Name>Run08</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Run09.png">
-      <Name>Run09</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterB\Run10.png">
-      <Name>Run10</Name>
+    <Compile Include="Sprites01_64\MonsterB\Idle.png">
+      <Name>Idle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites01_64\MonsterC\Run01.png">
-      <Name>Run01</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterC\Run02.png">
-      <Name>Run02</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterC\Run03.png">
-      <Name>Run03</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterC\Run04.png">
-      <Name>Run04</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterC\Run05.png">
-      <Name>Run05</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterC\Run06.png">
-      <Name>Run06</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterC\Run07.png">
-      <Name>Run07</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterC\Run08.png">
-      <Name>Run08</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterC\Run09.png">
-      <Name>Run09</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterC\Run10.png">
-      <Name>Run10</Name>
+    <Compile Include="Sprites01_64\MonsterA\Idle.png">
+      <Name>Idle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites01_64\MonsterD\Run01.png">
-      <Name>Run01</Name>
+    <Compile Include="Sprites01_64\MonsterC\Run_Left.png">
+      <Name>Run_Left</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Run02.png">
-      <Name>Run02</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Run03.png">
-      <Name>Run03</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Run04.png">
-      <Name>Run04</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Run05.png">
-      <Name>Run05</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Run06.png">
-      <Name>Run06</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Run07.png">
-      <Name>Run07</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Run08.png">
-      <Name>Run08</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Run09.png">
-      <Name>Run09</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\MonsterD\Run10.png">
-      <Name>Run10</Name>
+    <Compile Include="Sprites01_64\MonsterC\Run_Rght.png">
+      <Name>Run_Rght</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites01_64\Player\Celebrate01.png">
-      <Name>Celebrate01</Name>
+    <Compile Include="Sprites01_64\MonsterB\Run_Left.png">
+      <Name>Run_Left</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\Player\Celebrate02.png">
-      <Name>Celebrate02</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Celebrate03.png">
-      <Name>Celebrate03</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Celebrate04.png">
-      <Name>Celebrate04</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Celebrate05.png">
-      <Name>Celebrate05</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Celebrate06.png">
-      <Name>Celebrate06</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Celebrate07.png">
-      <Name>Celebrate07</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Celebrate08.png">
-      <Name>Celebrate08</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Celebrate09.png">
-      <Name>Celebrate09</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Celebrate10.png">
-      <Name>Celebrate10</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Die01.png">
-      <Name>Die01</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Die02.png">
-      <Name>Die02</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Die03.png">
-      <Name>Die03</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Die04.png">
-      <Name>Die04</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Die05.png">
-      <Name>Die05</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Die06.png">
-      <Name>Die06</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Die07.png">
-      <Name>Die07</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Die08.png">
-      <Name>Die08</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Die09.png">
-      <Name>Die09</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Die10.png">
-      <Name>Die10</Name>
+    <Compile Include="Sprites01_64\MonsterB\Run_Rght.png">
+      <Name>Run_Rght</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites01_64\Player\Jump01.png">
-      <Name>Jump01</Name>
+    <Compile Include="Sprites01_64\MonsterA\Run_Left.png">
+      <Name>Run_Left</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites01_64\Player\Jump02.png">
-      <Name>Jump02</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Jump03.png">
-      <Name>Jump03</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Jump04.png">
-      <Name>Jump04</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Jump05.png">
-      <Name>Jump05</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Jump06.png">
-      <Name>Jump06</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Jump07.png">
-      <Name>Jump07</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Jump08.png">
-      <Name>Jump08</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Jump09.png">
-      <Name>Jump09</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Jump10.png">
-      <Name>Jump10</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Run01.png">
-      <Name>Run01</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Run02.png">
-      <Name>Run02</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Run03.png">
-      <Name>Run03</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Run04.png">
-      <Name>Run04</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Run05.png">
-      <Name>Run05</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Run06.png">
-      <Name>Run06</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Run07.png">
-      <Name>Run07</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Run08.png">
-      <Name>Run08</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Run09.png">
-      <Name>Run09</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="Sprites01_64\Player\Run10.png">
-      <Name>Run10</Name>
+    <Compile Include="Sprites01_64\MonsterA\Run_Rght.png">
+      <Name>Run_Rght</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

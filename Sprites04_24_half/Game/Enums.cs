@@ -24,7 +24,7 @@ namespace Game
 
 	public enum Direction
 	{
-		Left,
-		Rght,
+		Left = 0,
+		Rght = 1,
 	}
 }
