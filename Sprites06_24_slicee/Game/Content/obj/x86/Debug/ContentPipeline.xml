@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\Player\Idle.xnb</Output>
-      <Time>2019-02-24T16:17:33.4662056+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\Player\Idle.xnb</Output>
+      <Time>2019-02-24T16:17:33.4762062+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterA\Idle.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterA\Idle.xnb</Output>
-      <Time>2019-02-24T16:17:33.4592052+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterA\Idle.xnb</Output>
+      <Time>2019-02-24T16:17:33.4702059+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterB\Idle.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterB\Idle.xnb</Output>
-      <Time>2019-02-24T16:17:33.4602053+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterB\Idle.xnb</Output>
+      <Time>2019-02-24T16:17:33.4712059+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterC\Idle.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterC\Idle.xnb</Output>
-      <Time>2019-02-24T16:17:33.4612054+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterC\Idle.xnb</Output>
+      <Time>2019-02-24T16:17:33.472206+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterD\Idle.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterD\Idle.xnb</Output>
-      <Time>2019-02-24T16:17:33.4632055+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterD\Idle.xnb</Output>
+      <Time>2019-02-24T16:17:33.473206+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterA\Run_Left.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterA\Run_Left.xnb</Output>
-      <Time>2019-02-24T16:17:33.4592052+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterA\Run_Left.xnb</Output>
+      <Time>2019-02-24T16:17:33.4712059+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterA\Run_Rght.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterA\Run_Rght.xnb</Output>
-      <Time>2019-02-24T16:17:33.4602053+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterA\Run_Rght.xnb</Output>
+      <Time>2019-02-24T16:17:33.4712059+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterB\Run_Left.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterB\Run_Left.xnb</Output>
-      <Time>2019-02-24T16:17:33.4602053+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterB\Run_Left.xnb</Output>
+      <Time>2019-02-24T16:17:33.472206+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterB\Run_Rght.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterB\Run_Rght.xnb</Output>
-      <Time>2019-02-24T16:17:33.4612054+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterB\Run_Rght.xnb</Output>
+      <Time>2019-02-24T16:17:33.472206+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterC\Run_Left.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterC\Run_Left.xnb</Output>
-      <Time>2019-02-24T16:17:33.4622054+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterC\Run_Left.xnb</Output>
+      <Time>2019-02-24T16:17:33.473206+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterC\Run_Rght.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterC\Run_Rght.xnb</Output>
-      <Time>2019-02-24T16:17:33.4622054+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterC\Run_Rght.xnb</Output>
+      <Time>2019-02-24T16:17:33.473206+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterD\Run_Left.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterD\Run_Left.xnb</Output>
-      <Time>2019-02-24T16:17:33.4632055+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterD\Run_Left.xnb</Output>
+      <Time>2019-02-24T16:17:33.4742061+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\MonsterD\Run_Rght.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\MonsterD\Run_Rght.xnb</Output>
-      <Time>2019-02-24T16:17:33.4642055+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\MonsterD\Run_Rght.xnb</Output>
+      <Time>2019-02-24T16:17:33.4742061+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\Player\Celebrate_Left.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\Player\Celebrate_Left.xnb</Output>
-      <Time>2019-02-24T16:17:33.4642055+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\Player\Celebrate_Left.xnb</Output>
+      <Time>2019-02-24T16:17:33.4742061+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\Player\Celebrate_Rght.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\Player\Celebrate_Rght.xnb</Output>
-      <Time>2019-02-24T16:17:33.4652056+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\Player\Celebrate_Rght.xnb</Output>
+      <Time>2019-02-24T16:17:33.4752062+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\Player\Die_Left.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\Player\Die_Left.xnb</Output>
-      <Time>2019-02-24T16:17:33.4652056+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\Player\Die_Left.xnb</Output>
+      <Time>2019-02-24T16:17:33.4752062+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\Player\Die_Rght.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\Player\Die_Rght.xnb</Output>
-      <Time>2019-02-24T16:17:33.4662056+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\Player\Die_Rght.xnb</Output>
+      <Time>2019-02-24T16:17:33.4762062+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\Player\Jump_Left.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\Player\Jump_Left.xnb</Output>
-      <Time>2019-02-24T16:17:33.4672057+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\Player\Jump_Left.xnb</Output>
+      <Time>2019-02-24T16:17:33.4762062+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\Player\Jump_Rght.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\Player\Jump_Rght.xnb</Output>
-      <Time>2019-02-24T16:17:33.4672057+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\Player\Jump_Rght.xnb</Output>
+      <Time>2019-02-24T16:17:33.4772063+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\Player\Run_Left.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\Player\Run_Left.xnb</Output>
-      <Time>2019-02-24T16:17:33.4682058+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\Player\Run_Left.xnb</Output>
+      <Time>2019-02-24T16:17:33.4772063+00:00</Time>
     </Item>
     <Item>
       <Source>Sprites01_64\Player\Run_Rght.png</Source>
@@ -187,18 +187,18 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\Sprites01_64\Player\Run_Rght.xnb</Output>
-      <Time>2019-02-24T16:17:33.4682058+00:00</Time>
+      <Output>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\Sprites01_64\Player\Run_Rght.xnb</Output>
+      <Time>2019-02-24T16:17:33.4772063+00:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\Content\</RootDirectory>
-      <LoggerRootDirectory>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\GitHub\StevePro7\PlatformerIMG\Sprites05_48_slice\Game\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\Content\</RootDirectory>
+      <LoggerRootDirectory>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\GitHub\StevePro7\PlatformerIMG\Sprites06_24_slicee\Game\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -14,7 +14,7 @@ namespace Game
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		private const int size = 2;
+		private const int size = 1;
 		private int wide = 24 * size;
 		private int high = 32 * size;
 		private Texture2D image;
@@ -109,7 +109,7 @@ namespace Game
 
 		/// <summary>
 		/// This is called when the game should draw itself.
-		/// </summary>
+		/// </summary>a
 		/// <param name="gameTime">Provides a snapshot of timing values.</param>
 		protected override void Draw(GameTime gameTime)
 		{
