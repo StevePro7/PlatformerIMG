@@ -4,7 +4,16 @@ using System.Text;
 
 namespace Game
 {
-	public enum PlayerType
+	public enum ActorType
+	{
+		MonsterA,
+		MonsterB,
+		MonsterC,
+		MonsterD,
+		Player,
+	}
+
+	public enum VerbType
 	{
 		Idle = 0,
 		Run = 1,
@@ -13,17 +22,10 @@ namespace Game
 		Jump = 4,
 	}
 
-	public enum MonsterLett
+	public enum FaceType
 	{
-		MonsterA = 0,
-		MonsterB = 1,
-		MonsterC = 2,
-		MonsterD = 3,
+		Left,
+		Rght,
 	}
 
-	public enum MonsterType
-	{
-		Idle = 0,
-		Run = 1,
-	}
 }
