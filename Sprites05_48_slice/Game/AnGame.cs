@@ -128,7 +128,7 @@ namespace Game
 					GraphicsDevice.SetRenderTarget(0, null);
 					Texture2D resolvedTexture = renderTarget.GetTexture();
 
-					String fileName = String.Format("{0}_{1}.png", assetName, index.ToString().PadLeft(2, '0'));
+					String fileName = String.Format("{0}_{1}.png", assetName, (index + 1).ToString().PadLeft(2, '0'));
 					resolvedTexture.Save(fileName, ImageFileFormat.Png);
 				}
 
