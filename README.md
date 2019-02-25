@@ -1,6 +1,12 @@
 # PlatformerIMG
 Images for Platformer game
 
+25/02/2019
+spritesheet.bmp
+E:\Steven\XNA\Platformer\SpriteBlackBG\Game\bin\x86\Debug
+C:\stevepro\XNA\Platformer\SpriteBlackBG\Game\bin\x86\Debug
+.db $00 $00 $01 $00 $11 $16 $25 $15 $15 $05 $27 $0B $2A $1A $2F $3F
+
 21/02/2019
 Invalid Operation Exception
 If receive this when save image then ensure that the output directory exists!
