@@ -15,14 +15,14 @@ namespace Game
 		SpriteBatch spriteBatch;
 
 		private const int size = 1;
-		private int wide = 24 * size;
-		private int high = 32 * size;
-		private Texture2D image;
-		
-		private ActorType actorType;
-		VerbType verbType;
-		FaceType faceType;
-		string assetName;
+		private int wide = 256;
+		private int high = 192;
+		private int index = 1;
+		private SpriteFont font;
+		private Texture2D[] image;
+		string start = "PRESS START";
+		Vector2 txtPos;
+
 		RenderTarget2D renderTarget;
 		private Color color;
 		private bool save;
@@ -34,10 +34,6 @@ namespace Game
 			{
 				save = Convert.ToBoolean(ConfigurationManager.AppSettings["Save"]);
 			}
-
-			actorType = (ActorType)Enum.Parse(typeof(ActorType), ConfigurationManager.AppSettings["ActorType"], true);
-			verbType = (VerbType)Enum.Parse(typeof(VerbType), ConfigurationManager.AppSettings["VerbType"], true);
-			faceType = (FaceType)Enum.Parse(typeof(FaceType), ConfigurationManager.AppSettings["FaceType"], true);
 
 			graphics = new GraphicsDeviceManager(this)
 			{
@@ -67,14 +63,23 @@ namespace Game
 		/// </summary>
 		protected override void LoadContent()
 		{
-			const String root = "Sprites01_64";
-
-			assetName = String.Format("{0}/{1}_{2}", actorType, verbType, faceType);
-			image = Content.Load<Texture2D>(root + "/" + assetName);
-
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
+			image = new Texture2D[5];
+			image[0] = Content.Load<Texture2D>("title6_org_minus16");
+			image[1] = Content.Load<Texture2D>("title8_org_minus16");
+			//image[0] = Content.Load<Texture2D>("title6_org");
+			//image[1] = Content.Load<Texture2D>("title8_org");
+			//image[0] = Content.Load<Texture2D>("title6");
+			//image[1] = Content.Load<Texture2D>("title8");
+			image[2] = Content.Load<Texture2D>("BlockA0");
+			image[3] = Content.Load<Texture2D>("Exit");
+			image[4] = Content.Load<Texture2D>("Platform");
+
+			font = Content.Load<SpriteFont>("Emulogic");
+
+			txtPos = font.MeasureString(start);
 			// Render target
 			PresentationParameters pp = GraphicsDevice.PresentationParameters;
 			int width = pp.BackBufferWidth;
@@ -115,39 +120,66 @@ namespace Game
 		{
 			if (save)
 			{
-				const int count = 10;
-				for (int index = 0; index < count; index++)
-				{
+				//const int count = 10;
+				//for (int index = 0; index < count; index++)
+				//{
 					GraphicsDevice.SetRenderTarget(0, renderTarget);
 					GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, color, 1, 0);
 
-					//DrawPlayer(loops, index);
-					DrawImage(index);
+					DrawImage();
 					base.Draw(gameTime);
 
 					GraphicsDevice.SetRenderTarget(0, null);
 					Texture2D resolvedTexture = renderTarget.GetTexture();
 
-					String fileName = String.Format("{0}_{1}.png", assetName, (index + 1).ToString().PadLeft(2, '0'));
+					String fileName = String.Format("MyTitle_org_minus16_{0}.png", index.ToString().PadLeft(2, '0'));
 					resolvedTexture.Save(fileName, ImageFileFormat.Png);
-				}
+				//}
 
 				Exit();
 			}
 			else
 			{
-				DrawImage(0);
+				DrawImage();
 
 				base.Draw(gameTime);
 			}
 		}
 
-		private void DrawImage(int index)
+		private void DrawImage()
 		{
 			GraphicsDevice.Clear(color);
-			Rectangle rect = new Rectangle(index * wide, 0, wide, high);
 			spriteBatch.Begin();
-			spriteBatch.Draw(image, Vector2.Zero, rect, Color.White);
+			//spriteBatch.Draw(image[index], new Vector2(4, -16), Color.White);
+			//spriteBatch.Draw(image[index], new Vector2(0, -16), Color.White);
+			spriteBatch.Draw(image[index], new Vector2(0, 0), Color.White);
+
+			for (int i = 1; i < 16; i++)
+			{
+				spriteBatch.Draw(image[2], new Vector2(16 * i, 0), Color.White);
+				spriteBatch.Draw(image[2], new Vector2(16 * i, 176), Color.White);
+			}
+
+			//spriteBatch.DrawString(font, start, new Vector2(0, 16), Color.White);
+			//spriteBatch.DrawString(font, start, new Vector2(0, 24), Color.White);
+			//spriteBatch.DrawString(font, start, new Vector2(0, 32), Color.White);
+
+			//spriteBatch.DrawString(font, start, new Vector2(0, 40), Color.White);
+			//spriteBatch.DrawString(font, start, new Vector2(0, 48), Color.White);
+
+			//spriteBatch.DrawString(font, start, new Vector2(0, 176 - 8 * 7), Color.White);
+			//spriteBatch.DrawString(font, start, new Vector2(0, 176 - 8 * 6), Color.White);
+			//spriteBatch.DrawString(font, start, new Vector2(0, 176 - 8 * 5), Color.White);
+			//spriteBatch.DrawString(font, start, new Vector2(0, 176 - 8 * 4), Color.White);
+			//spriteBatch.DrawString(font, start, new Vector2(0, 176 - 8 * 3), Color.White);
+			//spriteBatch.DrawString(font, start, new Vector2(0, 176 - 8 * 2), Color.White);
+			//spriteBatch.DrawString(font, start, new Vector2(0, 176 - 8 * 1), Color.White);
+			
+			float x = (256 - txtPos.X) / 2;
+			float y = 176 - 8 * 4;
+			//spriteBatch.DrawString(font, start, new Vector2(0, 176 - 8 * 3), Color.White);
+			spriteBatch.DrawString(font, start, new Vector2(x, y), Color.White);
+
 			spriteBatch.End();
 		}
 
