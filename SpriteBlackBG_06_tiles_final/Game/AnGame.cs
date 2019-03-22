@@ -189,8 +189,10 @@ namespace Game
 			spriteBatch.Draw(debug, new Vector2(7 * 16, 32 + 1 * 16), null, Color.White, 0.0f, Vector2.Zero, 1.0f, SpriteEffects.None, 1.0f);
 
 			spriteBatch.Draw(blocks[1], new Vector2(6 * 16 + 0, 32 + 1 * 16 + 0), null, Color.White, 0.0f, Vector2.Zero, 0.25f, SpriteEffects.None, 1.0f);
-			spriteBatch.Draw(blocks[2], new Vector2(6 * 16 + 8, 32 + 1 * 16 + 0), null, Color.White, 0.0f, Vector2.Zero, 0.25f, SpriteEffects.None, 1.0f);
-			spriteBatch.Draw(blocks[3], new Vector2(6 * 16 + 0, 32 + 1 * 16 + 8), null, Color.White, 0.0f, Vector2.Zero, 0.25f, SpriteEffects.None, 1.0f);
+			//spriteBatch.Draw(blocks[8], new Vector2(6 * 16 + 8, 32 + 1 * 16 + 0), null, Color.White, 0.0f, Vector2.Zero, 0.25f, SpriteEffects.None, 1.0f);
+			//spriteBatch.Draw(blocks[3], new Vector2(6 * 16 + 8, 32 + 1 * 16 + 0), null, Color.White, 0.0f, Vector2.Zero, 0.25f, SpriteEffects.None, 1.0f);
+			spriteBatch.Draw(blocks[4], new Vector2(6 * 16 + 8, 32 + 1 * 16 + 0), null, Color.White, 0.0f, Vector2.Zero, 0.25f, SpriteEffects.None, 1.0f);
+			spriteBatch.Draw(blocks[9], new Vector2(6 * 16 + 0, 32 + 1 * 16 + 8), null, Color.White, 0.0f, Vector2.Zero, 0.25f, SpriteEffects.None, 1.0f);
 			spriteBatch.Draw(gem, new Vector2(6 * 16 + 8, 32 + 1 * 16 + 8), null, Color.Red, 0.0f, Vector2.Zero, 0.27f, SpriteEffects.None, 1.0f);
 
 			spriteBatch.End();
